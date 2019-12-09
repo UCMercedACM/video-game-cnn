@@ -316,6 +316,16 @@ def mainGame(movementInfo):
         playerSurface = pygame.transform.rotate(IMAGES['player'][playerIndex], visibleRot)
         SCREEN.blit(playerSurface, (playerx, playery))
 
+        #######################################################################
+        font = pygame.font.SysFont('',24)
+        text = "playery:" + str(playery) + "   playerVelY: " + str(playerVelY)
+        text = font.render(text,True,(0,0,0))
+        textRect = text.get_rect()
+        textRect.center = (text.get_width()/2+3,SCREENHEIGHT-text.get_height()-10)
+        SCREEN.blit(text, textRect)
+        circle = pygame.draw.circle(SCREEN, (0,0,255), (playerx, playery), 1, 1)
+        #########################################################################
+
         pygame.display.update()
         FPSCLOCK.tick(FPS)
 
