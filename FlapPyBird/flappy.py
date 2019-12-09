@@ -226,8 +226,10 @@ def mainGame(movementInfo):
 
 
     while True:
-        print("Y: ", playery)
-        print("X: ", playerx)
+        print("Y: ", playery) # print y coord
+        print("X: ", playerx) # print x coord
+        print("Upper pipe: ", upperPipes) # prints upper pipe
+        print("Lower pipe: ", lowerPipes) # prints lower pipe
         for event in pygame.event.get():
             if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
                 pygame.quit()
