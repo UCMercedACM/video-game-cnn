@@ -1,4 +1,5 @@
 # flappy-bird-cnn
+
 🐦Build a controlled neural network to allow an ai to win every time at flappy bird 🐤
 
 ## Getting Started
@@ -25,3 +26,17 @@
 6. Use <kbd>&uarr;</kbd> or <kbd>Space</kbd> key to play and <kbd>Esc</kbd> to close the game.
 
 (For x64 windows, get exe [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame))
+
+## Run the Application
+
+1. Install the python packages from the Pipfile
+
+    ```bash
+    pipenv install -r
+    ```
+
+2. Run the project's virtualenv
+
+    ```bash
+    pipenv shell
+    ```
